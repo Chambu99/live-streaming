@@ -1,44 +1,29 @@
-
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ChannelCard from './ChannelCard';
-import channelsData from '../data/channels.json';
 
-const ChannelList = ({ onChannelSelect }) => {
-  const [channels, setChannels] = useState([]);
-  const [category, setCategory] = useState('All');
-
-  useEffect(() => {
-    setChannels(channelsData);
-  }, []);
-
-  const uniqueCategories = ['All', ...new Set(channels.map(c => c.category))];
-
-  const filteredChannels = category === 'All'
-    ? channels
-    : channels.filter(c => c.category === category);
-
+function ChannelList({ channels, onChannelSelect }) {
   return (
     <div>
-      <div className="filter-bar " style={{ margin: '10px 0', padding: '10px', borderRadius: '5px'  }}>
-        <select value={category} onChange={(e) => setCategory(e.target.value)}>
-          {uniqueCategories.map(cat => (
-            <option key={cat} value={cat}>{cat}</option>
-          ))}
-        </select>
-      </div>
-      <div className="channel-list flex flex-wrap gap-3 ">
-        {filteredChannels.map(channel => (
+      <div
+        className="channel-list"
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          gap: '1rem',
+          padding: '1rem'
+        }}
+      >
+        {channels.map(channel => (
           <ChannelCard
             key={channel.id}
-            name={channel.name}
-            logo={channel.logo}
-            category={channel.category}
-            onClick={() => onChannelSelect(channel.streamUrl)}
+            channel={channel}
+            onSelect={onChannelSelect}
           />
         ))}
       </div>
     </div>
   );
-};
+}
 
 export default ChannelList;

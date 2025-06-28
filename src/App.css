@@ -53,3 +53,55 @@ video {
 .filter-bar select:hover {
   background-color: #4b5563;
 }
+.channel-card {
+  background-color: #374151;
+  border-radius: 4px;
+  display: flex;
+ flex-direction: column;
+  
+  
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  width: 130px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.channel-card:hover {
+  background-color: #4b5563;
+  transition: transform 0.2s;
+  transform: scale(1.05);
+}
+.category-btn {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #eee;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-btn:hover {
+  background-color: #f2be03;
+}
+
+.category-btn.active {
+  background-color: #222;
+  color: #fff;
+}
+.reload-button {
+  background-color: #c5dbfa;
+  color: rgb(24, 22, 22);
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #374151;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.reload-button:hover {
+  background-color: #e7be37;
+}

@@ -77,14 +77,8 @@ function VideoPlayer({ url }) {
             />
             <button
               onClick={() => setReloadTrigger((c) => c + 1)}
-              style={{
-                backgroundColor: '#1f2937',
-                color: 'white',
-                padding: '8px 16px',
-                borderRadius: '6px',
-                border: '1px solid #374151',
-                cursor: 'pointer',
-              }}
+              className="reload-button"
+              
             >
               Reload Stream
             </button>
