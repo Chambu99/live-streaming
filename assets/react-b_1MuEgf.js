@@ -1,4 +1,4 @@
-import{R as B}from"./index-DudtJi49.js";const H="https://www.youtube.com/embed",$="https://www.youtube-nocookie.com/embed",j="https://www.youtube.com/iframe_api",D="YT",Y="onYouTubeIframeAPIReady",F=/(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=|shorts\/|live\/))((\w|-){11})/;function M(i,e={}){const t={src:N(i,e),frameborder:0,width:"100%",height:"100%",allow:"accelerometer; fullscreen; autoplay; encrypted-media; gyroscope; picture-in-picture"};return e.config&&(t["data-config"]=JSON.stringify(e.config)),`
+import{R as B}from"./index-DSqCPI3y.js";const H="https://www.youtube.com/embed",$="https://www.youtube-nocookie.com/embed",j="https://www.youtube.com/iframe_api",D="YT",Y="onYouTubeIframeAPIReady",F=/(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=|shorts\/|live\/))((\w|-){11})/;function M(i,e={}){const t={src:N(i,e),frameborder:0,width:"100%",height:"100%",allow:"accelerometer; fullscreen; autoplay; encrypted-media; gyroscope; picture-in-picture"};return e.config&&(t["data-config"]=JSON.stringify(e.config)),`
     <style>
       :host {
         display: inline-block;
