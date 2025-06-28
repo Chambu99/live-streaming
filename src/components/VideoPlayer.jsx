@@ -4,8 +4,7 @@ import ReactPlayer from 'react-player';
 
 function VideoPlayer({ url }) {
   const videoRef = useRef(null);
-  const isYouTubeUrl = (url) =>
-    url.includes('youtube.com') || url.includes('youtu.be');
+ 
   const [retryCount, setRetryCount] = useState(0);
   const [reloadTrigger, setReloadTrigger] = useState(0);
 
@@ -58,22 +57,16 @@ function VideoPlayer({ url }) {
     <div>
       <div className="video-container" style={{ position: 'relative', paddingTop: '56.25%' }}>
 
-        {isYouTubeUrl(url) ? (
-          <ReactPlayer
-            url={url}
-            ref={videoRef}
-            controls
-            width="100%"
-            height="100%"
-            style={{ position: 'absolute', top: 0, left: 0 }}
-          />
-        ) : (
+        (
           <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
             <video
               ref={videoRef}
               controls
               autoPlay
-              style={{ width: '100%', maxHeight: '80vh', backgroundColor: 'black' }}
+               muted
+        playsInline
+        src={url}
+        style={{ width: '100%', maxWidth: '720px', borderRadius: '12px', padding: '10px', backgroundColor: '#000',marginLeft: 'auto', marginRight: 'auto'  }}
             />
             <button
               onClick={() => setReloadTrigger((c) => c + 1)}
@@ -83,7 +76,7 @@ function VideoPlayer({ url }) {
               Reload Stream
             </button>
           </div>
-        )}
+        
       </div>
     </div>
   );

@@ -60,7 +60,7 @@ const channels = [
   },
   {
     id: 8,
-    name: "Cartoon Network",
+    name: "TNT",
     logo: TNTLogo,
     category: "Music",
     streamUrl: "https://streaming.televizor-24-tochka.ru/live/38-req_offset_28000000-req_window_0-2k_v5.m3u8"
