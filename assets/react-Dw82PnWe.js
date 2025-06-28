@@ -1,4 +1,4 @@
-import{R as I}from"./index-DSqCPI3y.js";const W=["abort","canplay","canplaythrough","durationchange","emptied","encrypted","ended","error","loadeddata","loadedmetadata","loadstart","pause","play","playing","progress","ratechange","seeked","seeking","stalled","suspend","timeupdate","volumechange","waiting","waitingforkey","resize","enterpictureinpicture","leavepictureinpicture","webkitbeginfullscreen","webkitendfullscreen","webkitpresentationmodechanged"],L=globalThis.document?.createElement("template");L&&(L.innerHTML=`
+import{R as I}from"./index-CJukifZL.js";const W=["abort","canplay","canplaythrough","durationchange","emptied","encrypted","ended","error","loadeddata","loadedmetadata","loadstart","pause","play","playing","progress","ratechange","seeked","seeking","stalled","suspend","timeupdate","volumechange","waiting","waitingforkey","resize","enterpictureinpicture","leavepictureinpicture","webkitbeginfullscreen","webkitendfullscreen","webkitpresentationmodechanged"],L=globalThis.document?.createElement("template");L&&(L.innerHTML=`
     <style>
       :host {
         display: inline-block;

@@ -1,4 +1,4 @@
-import{H as m,R as P}from"./index-DSqCPI3y.js";import{C as I}from"./custom-media-element-Ce0vsE-t.js";import{M as x}from"./mixin-Cp5RyXal.js";const A=e=>class extends e{static shadowRootOptions={...e.shadowRootOptions};static getTemplateHTML=(t,n={})=>{const{src:h,...E}=t;return`
+import{H as m,R as P}from"./index-CJukifZL.js";import{C as I}from"./custom-media-element-Ce0vsE-t.js";import{M as x}from"./mixin-Cp5RyXal.js";const A=e=>class extends e{static shadowRootOptions={...e.shadowRootOptions};static getTemplateHTML=(t,n={})=>{const{src:h,...E}=t;return`
         <script type="application/json" id="config">
           ${JSON.stringify(n.config||{})}
         <\/script>
