@@ -7,6 +7,11 @@ import CGTNLogo from '../assets/cgtn.webp';
 import CRAVELogo from '../assets/CRAVE.webp';
 import TNTLogo from '../assets/TNT.png';
 import MOTOSPORTSLogo from '../assets/MOTOSPORTS.png';
+import DISNEYLogo from '../assets/DISNEY.png';
+import DISCOVERYLogo from '../assets/DISCOVERY.png';
+import DISNEYXDLogo from '../assets/DISNEYXD.png';
+import CNLogo from '../assets/CN.png';
+import GAMEPLUSLogo from '../assets/GAMEPLUS.jpg';
 
 const channels = [
   {
@@ -16,6 +21,7 @@ const channels = [
     category: "Sports",
     streamUrl: "https://fl3.moveonjoy.com/CBS_SPORTS_NETWORK/tracks-v1a1/mono.ts.m3u8"
   },
+  
   {
     id: 2,
     name: "FUEL TV",
@@ -71,7 +77,39 @@ const channels = [
     logo: MOTOSPORTSLogo,
     category: "Sports",
     streamUrl: "https://d39g1vxj2ef6in.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/3dc9603b-ed0a-4d55-90ac-d21905c26883/3.m3u8"
-  }
+  },
+    { id: 10,
+    name: "DISNEY",
+    logo: DISNEYLogo,
+    category: "Kids",
+    streamUrl: "https://fl5.moveonjoy.com/DISNEY/tracks-v1a1/mono.ts.m3u8"
+    },
+    { id: 11,
+    name: "SMITHSONIAN ",
+    logo: DISCOVERYLogo,
+    category: "Science",
+    streamUrl: "https://fl3.moveonjoy.com/SMITHSONIAN_CHANNEL/tracks-v1a1/mono.ts.m3u8"
+    },
+
+     { id: 12,
+    name: "DISNEYXD",
+    logo: DISNEYXDLogo,
+    category: "Kids",
+    streamUrl: "https://fl3.moveonjoy.com/DISNEY_XD/tracks-v1a1/mono.ts.m3u8"
+    },
+
+     { id: 13,
+    name: "TOONAMI",
+    logo: CNLogo,
+    category: "Kids",
+    streamUrl: "http://api.toonamiaftermath.com:3000/est/playlist.m3u8"
+    },
+     { id: 14,
+    name: "GAME+",
+    logo: GAMEPLUSLogo,
+    category: "Sports",
+    streamUrl: "https://a-cdn.klowdtv.com/live2/fntsy_720p/chunks.m3u8"
+    }
 ];
 
 export default channels;
