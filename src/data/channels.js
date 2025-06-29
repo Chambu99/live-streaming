@@ -102,7 +102,7 @@ const channels = [
     name: "TOONAMI",
     logo: CNLogo,
     category: "Kids",
-    streamUrl: "http://api.toonamiaftermath.com:3000/est/playlist.m3u8"
+    streamUrl: "http://api.toonamiaftermath.com:3000/pst/playlist.m3u8"
     },
      { id: 14,
     name: "GAME+",
